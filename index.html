@@ -10,35 +10,126 @@
 </head>
 
 <body>
-    <main>
-
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark-subtle">
-                <div class="container-fluid">
-                    <img src="./img/duck.png" alt="logo" width="50">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Catalogo libri</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Anagrafica clienti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Storico Prestiti</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Help</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Cerca</button>
-                    </form>
+    <header>
+        <!--Gli ho dato un bg-dark-subtle per il colore dello sfondo-->
+        <nav class="navbar navbar-expand-lg bg-dark-subtle">
+            <!--Ho creato un container per la barra di ricerca-->
+            <div class="container-fluid">
+                <img src="./img/duck.png" alt="logo" width="50">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+                        <!-- il tag href si usa poi per inserire l'URL della pagina al posto di #-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalogo libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica clienti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Cerca</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="action">
+                <h2> Catalogo Libri</h2>
+                <button class="action-1 rounded bg-primary text-white" href="#">Aggiungi Libro</button>
+            </div>
+
+
+            <div class="table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                            <th scope="col">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">I pilastri della terra</td>
+                            <td>-</td>
+                            <td>Disponibile</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">I promessi sposi</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Il signore degli anelli</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
 
     </main>
 
